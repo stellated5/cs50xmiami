@@ -12,3 +12,10 @@ Ever wonder how much a "lifetime supply" of your favorite snack is? Wonder no mo
 */
 
 // write your solution here...
+var cur_age = 33;
+var max_age = 100;
+var snack = 2;
+
+var supply = (max_age - cur_age) * snack;
+
+console.log('You will need ' + supply + ' to last you until the ripe old age of ' + max_age);
