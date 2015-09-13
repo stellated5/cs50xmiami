@@ -17,4 +17,16 @@ For example:
 
 function notBad(sentence) {
   // write your solution here...
+var not = sentence.indexOf("not");
+var bad = sentence.indexOf("bad");
+
+if (bad > not && bad != - 1 && not != - 1) {
+  console.log("found them!");
+  var reg_ex = new RegExp(sentence[0], "i");
+  var rep = sentence.replace((sentence.substr(not, bad + 2)), ' good');
+  return rep;
+} else {
+  return sentence;
 }
+}
+console.log(notBad("This drink is not very bad"));

@@ -10,3 +10,12 @@ Write a function named tellFortune that:
 */
 
 // write your solution here...
+var tellFortune = function(fortune) {
+  console.log('You will be a ' + fortune[0] + ' in ' + fortune[1] + ', and married to ' + fortune[2] + ' with ' + fortune[3] + ' kids.');
+}
+var fortune1 = ["entrepreneur", "Seattle", "Javier", 2];
+tellFortune(fortune1);
+var fortune2 = ["artist", "Miami", "James Dean", 0];
+tellFortune(fortune2);
+var fortune3 = ["cafe owner", "Portland", "Joe", 5];
+tellFortune(fortune3);
