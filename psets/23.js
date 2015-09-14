@@ -11,3 +11,14 @@ It's like IMDB, but much much smaller!
 */
 
 // write your solution here...
+var movie = {
+  title: "The Godfather",
+  duration: 3,
+  stars: ["Marlon Brando", "Al Pacino", "Robert Duvall"]
+};
+
+var movieInfo = function(myObj) {
+  console.log(movie.title + " lasts for " + movie.duration + " hours. Stars: " + movie.stars + ".");
+};
+
+movieInfo(movie);

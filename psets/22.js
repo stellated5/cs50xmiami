@@ -17,3 +17,31 @@ Keep track of which books you read and which books you want to read!
 */
 
 // write your solution here...
+var books = [
+   hobbit = {
+    title: "The Hobbit",
+    author: "J.R.R. Tolkien",
+    alreadyRead: false
+  },
+  farewell = {
+    title: "A Farewell to Arms",
+    author: "Ernest Hemingway",
+    alreadyRead: true
+  },
+  kite = {
+    title: "The Kite Runner",
+    author: "Khaled Hosseini",
+    alreadyRead: true
+  }
+];
+
+var list = function(books) {
+      for(var i = 0; i < books.length; i++) {
+        var obj = books[i];
+          if (obj['alreadyRead'] === true) {
+            console.log("You already read " + obj['title'] + " by " + obj['author'] + ".");
+          } else console.log("You still need to read " + obj['title'] + " by " + obj['author'] + ".");
+    }
+  };
+
+list(books);
