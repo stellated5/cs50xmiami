@@ -9,3 +9,9 @@ Create an array to hold your top choices (colors, presidents, whatever).
 */
 
 // write your solution here...
+var myArray = ["indie rock", "indie pop", "old-school hip-hop"];
+
+for (var i = 0; i < myArray.length; i++) {
+  numChoice = "#".concat(i + 1);
+  console.log("My " + numChoice + " choice is " + myArray[i] + ".");
+}
